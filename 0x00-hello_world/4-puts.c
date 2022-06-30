@@ -1,6 +1,8 @@
 #include <stdio.h>
 /*
- *main - Main function of my project
+ * main - prints the phrase "Programming is like building a multilingual puzzle"
+  * Return: 0 if exited properly, non-zero otherwise
+ * main - Main function of my project
  * Description: 'main - Entry point'
  * main: 0 if exited properly, non-zero otherwise
   */
