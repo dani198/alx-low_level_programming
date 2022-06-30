@@ -1,6 +1,6 @@
 #include <stdio.h>
 /*
- * main: Entry Point
+ *main - Main function of my project
  * Description: 'main - Entry point'
  * main: 0 if exited properly, non-zero otherwise
   */
