@@ -3,7 +3,6 @@
 /**
  * main - Program to print alphabet letters in all cases followed by new line
  *
- *
  * Return: return 0
  */
 int main(void)
@@ -15,7 +14,7 @@ letter = tolower(letter);
 putchar(letter);
 if (letter == 'z')
 {
-letter = 'A';	
+letter = 'A';
 for (; letter <= 'Z'; letter++)
 {
 putchar(letter);
