@@ -1,7 +1,6 @@
 #include <stdio.h>
 /**
- *main - Prints all combinations of two digits with,
- * and space followed by new line
+ *main - Prints all combinations
  *
  * 
  *Return: returns 0
