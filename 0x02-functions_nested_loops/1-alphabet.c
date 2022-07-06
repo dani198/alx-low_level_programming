@@ -1,6 +1,8 @@
+/*
+ * File: 1-alphabet.c
+ */
 #include "main.h"
 /**
- *File: 1-alphabet.c
  *
  *print_alphabet - prints the alphabet in lowercase, followed by a new line.
  */
