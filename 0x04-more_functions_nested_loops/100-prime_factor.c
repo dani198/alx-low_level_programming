@@ -1,10 +1,26 @@
+#include "main.h"
 #include <stdio.h>
 /**
- * main - prints prime factors of 612852475143
+ * main - program that prints out the highest prime
  *
- * Return: Always 0 (Success)
+* Return: 0
  */
 int main(void)
 {
+int i = 2;
+long n = 612852475143;
+while (i < n)
+{
+while (n % i == 0)
+{
+if (n == i)
+{
+break;
+}
+n /= i;
+}
+i++;
+}
+printf("%lu\n", n);
 return (0);
 }
