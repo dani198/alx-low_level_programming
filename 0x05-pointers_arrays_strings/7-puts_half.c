@@ -25,5 +25,6 @@ while (str[i] != '\0')
 j = str[i];
 i++;
 _putchar(j);
+}
 _putchar('\n');
 }
