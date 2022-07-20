@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _puts_recursion - Write a function that prints a string, followed by a newlin
+ * _puts_recursion - Write a function that prints a string
  * @s: This is the input string
  */
 void _puts_recursion(char *s)
