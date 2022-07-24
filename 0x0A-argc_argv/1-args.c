@@ -1,9 +1,8 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * main - Prints the number of arguments passed into main
+ * main - Prints the number of arguments passed  main
  * @argc: Number of command line arguments
- *
  * @argv: Array name
  * Return: 0
  */
