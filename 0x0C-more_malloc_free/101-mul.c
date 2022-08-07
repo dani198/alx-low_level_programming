@@ -22,13 +22,10 @@ return (len);
 }
 /**
  * create_xarray - Creates an array of chars and initializes it with
- *     the character 'x'. Adds a terminating null byte.
- *
+ *     the character 'x' Adds a terminating null byt
  *    @size: The size of the array to be i
  *    Description: If there is insufficient space, the
- *
  *  function exits with a status of 98.
- *
  *   Return: A pointer to the array.
  */
 char *create_xarray(int size)
@@ -60,9 +57,7 @@ return (str);
 }
 /**
  * get_digit - Converts a digit character to a corresponding int.
- *
  *  @c: The character to be converted.
- *
  *  Description: If c is a non-digit, the fun
  *     exits with a status of 98.
  * Return: The converted int.
@@ -80,16 +75,11 @@ return (digit);
 /**
  * get_prod - Multiplies a string of numbers by a single digit.
  *
- *  @prod: The buffer to store the result.
- *
- *  @mult: The string of numbers.
- *
- *  @digit: The single digit.
- *
- * @zeroes: The necessary number of leading zeroes.
- *
+ *  @prod: The buffer to store the result
+ *  @mult: The string of numbers
+ *  @digit: The single digit
+ * @zeroes: The necessary number of leading zeroes
  *   Description: If mult contains a non-digit, the function
- *
  *    exits with a status value of 98.
  */
 void get_prod(char *prod, char *mult, int digit, int zeroes)
@@ -126,8 +116,7 @@ if (tens)
 /**
  * add_nums - Adds the numbers stored in two strings.
  *
- * @final_prod: The buffer storing the running final product.
- *
+ * @final_prod: The buffer storing the running final product
  * @next_prod: The next product to be added.
  *
  *   @next_len: The length of next_prod.
