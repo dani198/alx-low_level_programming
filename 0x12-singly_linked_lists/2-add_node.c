@@ -1,11 +1,8 @@
 #include "lists.h"
 /**
  * add_node - fills memory with a constant byte
- *
  * @head: is the owner of the dog
- *
  * @str: is a string
- *
  * Return: a address
  */
 list_t *add_node(list_t **head, const char *str)
