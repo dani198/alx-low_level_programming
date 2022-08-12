@@ -1,26 +1,29 @@
-#include <stdlib.h>
-#include <string.h>
 #include "lists.h"
 /**
- * add_node - adds a new node at the beginning of a linked list
+ * add_node - fills memory with a constant byte
  *
- *  @head: double pointer to the list_t list
+ * @head: is the owner of the dog
  *
- * @str: new string to add in the node
- * Return: the address of the new element, or NULL if it fails
+ * @str: is a string
+ *
+ * Return: a address
  */
 list_t *add_node(list_t **head, const char *str)
 {
 list_t *new;
-unsigned int len = 0;
-while (str[len])
-len++;
+size_t n;
 new = malloc(sizeof(list_t));
-if (!new)
+if (new == NULL)
 return (NULL);
 new->str = strdup(str);
-new->len = len;
-new->next = (*head);
-(*head) = new;
+if (new->str == NULL)
+{
+free(new);
+return (NULL);
+}
+for (n = 0; new->str[n] != '\0'; n++);
+new->len = n;
+new->next = *head;
+*head = new;
 return (*head);
 }
