@@ -1,42 +1,47 @@
 #include "dog.h"
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 /**
- * new_dog - fills memory with a constant byte
- * @name: is the name of the dog
- * @age: is the age of the dog
- * @owner: is the owner of the dog
- * Return: a void pointer
+ * new_dog - new dog
+ *
+ * @name: name's dog
+ * @age: age's dog
+ * @owner: owner's dog
+ * Return: newdog
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-int cont1, cont2, cont3;
-char *sname, *sowner;
-dog_t *ndog;
-ndog = malloc(sizeof(dog_t));
-if (ndog == NULL)
-return (NULL);
-for (cont1 = 0; name[cont1] != '\0'; cont1++);
-for (cont2 = 0; owner[cont2] != '\0'; cont2++);
-sname = malloc(sizeof(char) * cont1 + 1);
-if (sname == NULL)
+int i = 0, j = 0, k;
+dog_t *doge;
+while (name[i] != '\0')
+i++;
+while (owner[j] != '\0')
+j++;
+doge = malloc(sizeof(dog_t));
+if (doge == NULL)
 {
-free(ndog);
+free(doge);
 return (NULL);
 }
-for (cont3 = 0; cont3 <= cont1; cont3++)
-sname[cont3] = name[cont3];
-sowner = malloc(sizeof(char) * cont2 + 1);
-if (sowner == NULL)
+doge->name = malloc(i * sizeof(doge->name));
+if (doge->name == NULL)
 {
-free(ndog);
-free(sname);
+free(doge->name);
+free(doge);
 return (NULL);
 }
-for (cont3 = 0; cont3 <= cont2; cont3++)
-sowner[cont3] = owner[cont3];
-ndog->name = sname;
-ndog->age = age;
-ndog->owner = sowner;
-return (ndog);
+for (k = 0; k <= i; k++)
+doge->name[k] = name[k];
+doge->age = age;
+doge->owner = malloc(j * sizeof(doge->owner));
+if (doge->owner == NULL)
+{
+free(doge->owner);
+free(doge->name);
+free(doge);
+return (NULL);
+}
+for (k = 0; k <= j; k++)
+doge->owner[k] = owner[k];
+return (doge);
 }
