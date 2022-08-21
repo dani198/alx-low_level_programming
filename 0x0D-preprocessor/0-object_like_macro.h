@@ -1,4 +1,4 @@
 #ifndef MAIN
 #define MAIN
-int _putchar(char c);
+#define SIZE 1024
 #endif
