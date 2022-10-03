@@ -1,3 +1,3 @@
 #!/bin/bash
-gcc *.o -shared -o libruin.so
-LD_PRELOAD=$PWD/libruin.so
+gcc *.o -shared -o libgiga.so
+LD_PRELOAD=$PWD/libgiga.so
