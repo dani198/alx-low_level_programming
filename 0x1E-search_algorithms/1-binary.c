@@ -1,5 +1,4 @@
 #include "search_algos.h"
-
 /**
  * binary_search - searches for a value in an integer array using a binary
  * search algorithm, not guaranteed to return lowest index if `value` appears
